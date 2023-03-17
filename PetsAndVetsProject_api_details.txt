@@ -1,0 +1,11 @@
+Register user
+-------------
+POST - http://localhost:8080/user/create 
+Request Payload - 
+{
+"userName":
+"password":
+"email":
+"phone":
+"role":
+}
