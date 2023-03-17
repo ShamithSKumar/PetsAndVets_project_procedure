@@ -1,0 +1,45 @@
+Procedure to follow:
+----------------------
+Important note: No validation is added so please fill all the data
+
+Run the Spring boot application first. As mentioned in the README.doc in java project
+Run the Angular project and load the UI in Google Chrome browser. AS mentioned in the README doc in Angular
+
+User Registeration
+------------------
+Select the tab "Register" to create new user (All the created user will have role "ROLE_USER" by default).
+Once user created go to the database and update the column role to "ROLE_ADMIN". Need to do it manually
+
+Create another user from the "Register" tab again.
+
+Now you will have two user in the DB one with role ROLE_ADMIN and other with ROLE_USER.
+
+User Login from POSTMAN
+-------------------------
+Login from the postman using the url http://localhost:8080/user/login
+Reponse payload will have Bearer token, use the token in the postman as Authorisation -> select Bearer then paste the token.
+
+Use the endpoint 
+http://localhost:8080/pet/create to create some pets or can create the pets manually in the db.
+
+User Login - UI 
+----------
+Select Login tab, enter the username and password (ROLE_USER and ROLE_ADMIN has different dashboard).
+
+User can view the user-pet list, you can create new pet from the add button (orange button on the dashboard).
+
+Note: Enter the Pet as String didn't add a drop down option. (Add the pet which is already available in the db)
+
+Once the Pet is created you will be redirected to list view, you can view the created pet there.
+
+Edit User pet - Clik edit button the model will open with user-pet details. While try to update you will get CORS issue, didn't fixed the issue yet.
+Delete pet - Delete should happen from the icon on the list, facing CORS issue
+=================================================================================
+
+Admin User Login
+---------------
+Login with admin username and password you will be redirected to Admin dashboard
+There you can see the user list.
+
+User view -- Click view button you can view the user pet list in the model.
+Update user -- Clik update button the model will open with user details, cannot update username which is also disabled. Update is also facing CORS issue.
