@@ -1,3 +1,5 @@
+UserController
+==============================
 Register user
 -------------
 POST - http://localhost:8080/user/create 
@@ -9,3 +11,85 @@ Request Payload -
 "phone":
 "role":
 }
+
+Login user
+------------
+POST - http://localhost:8080/user/login
+Request Payload - 
+{
+"userName":
+"password":
+}
+
+Get all users
+-------------
+GET - http://localhost:8080/user/list
+
+Get user by id
+--------------
+Get - http://localhost:8080/user/{id}
+
+update user
+--------------
+PUT - http://localhost:8080/user/update
+
+Request Payload - 
+{
+"userName":
+"email":
+"phone":
+"role":
+}
+==============================================================
+
+PetController
+==============
+Get pet list
+-------------
+GET - http://localhost:8080/pet/list
+
+
+Create pet
+----------
+POST - http://localhost:8080/pet/create
+
+Request Payload - 
+{
+"petType":
+}
+================================================================
+
+UserPetController
+================
+Create User pet mapping 
+-----------------------
+POST - http://localhost:8080/userpet/create
+Request Payload - 
+{
+"petType":
+"amount"
+"name"
+}
+
+Get pets by user
+----------------
+GET - http://localhost:8080/userpet/list
+
+Get pets by userName
+---------------------
+GET - http://localhost:8080/userpet/list/{userName}
+
+Update userpet details
+----------------------
+PUT - http://localhost:8080/userpet/update
+Request Payload - 
+{
+userPetId
+petType
+amount
+name
+}
+
+Delete userpet details
+----------------------
+DELETE - http://localhost:8080/userpet/delete/{id}
