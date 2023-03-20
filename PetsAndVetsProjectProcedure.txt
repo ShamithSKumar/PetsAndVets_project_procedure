@@ -14,13 +14,9 @@ Create another user from the "Register" tab again.
 
 Now you will have two user in the DB one with role ROLE_ADMIN and other with ROLE_USER.
 
-User Login from POSTMAN
+Pet creation
 -------------------------
-Login from the postman using the url http://localhost:8080/user/login
-Reponse payload will have Bearer token, use the token in the postman as Authorisation -> select Bearer then paste the token.
-
-Use the endpoint 
-http://localhost:8080/pet/create to create some pets or can create the pets manually in the db.
+Please create the Pet manually in the db, this created pets name should be added while adding pet in the user dashboard
 
 User Login - UI 
 ----------
