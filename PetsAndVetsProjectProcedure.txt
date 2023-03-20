@@ -32,8 +32,10 @@ Note: Enter the Pet as String didn't add a drop down option. (Add the pet which 
 
 Once the Pet is created you will be redirected to list view, you can view the created pet there.
 
-Edit User pet - Clik edit button the model will open with user-pet details. While try to update you will get CORS issue, didn't fixed the issue yet.
-Delete pet - Delete should happen from the icon on the list, facing CORS issue
+Edit User pet - Clik edit button the model will open with user-pet details, edit the value and click update button.
+Delete pet - Delete should happen from the icon on the list, not implemented has errors
+
+Note: Refresh the browser it will take you to login page, didn't implement logout
 =================================================================================
 
 Admin User Login
@@ -42,4 +44,4 @@ Login with admin username and password you will be redirected to Admin dashboard
 There you can see the user list.
 
 User view -- Click view button you can view the user pet list in the model.
-Update user -- Clik update button the model will open with user details, cannot update username which is also disabled. Update is also facing CORS issue.
+Update user -- Clik update button the model will open with user details, cannot update username which is also disabled.
