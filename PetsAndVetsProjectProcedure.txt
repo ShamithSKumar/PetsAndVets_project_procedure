@@ -26,14 +26,14 @@ User Login - UI
 ----------
 Select Login tab, enter the username and password (ROLE_USER and ROLE_ADMIN has different dashboard).
 
-User can view the user-pet list, you can create new pet from the add button (orange button on the dashboard).
+User can view the user-pet list, you can add new pet from the add button (orange button on the dashboard).
 
-Note: Enter the Pet as String didn't add a drop down option. (Add the pet which is already available in the db)
+Note: Enter the PetType as String didn't add a drop down option. (Add the pet which is already available in the db)
 
 Once the Pet is created you will be redirected to list view, you can view the created pet there.
 
 Edit User pet - Clik edit button the model will open with user-pet details, edit the value and click update button.
-Delete pet - Delete should happen from the icon on the list, not implemented has errors
+Delete pet - Delete will happen from the delete icon on the list
 
 Note: Refresh the browser it will take you to login page, didn't implement logout
 =================================================================================
